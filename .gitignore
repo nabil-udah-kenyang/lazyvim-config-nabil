@@ -1,0 +1,22 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Swap / backup / temporary files
+*.swp
+*.swo
+*.tmp
+*.cache
+
+# Python bytecode
+*.pyc
+__pycache__/
+
+# LazyVim plugin lock
+lazy-lock.json
+
