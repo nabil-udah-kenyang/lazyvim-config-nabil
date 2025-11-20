@@ -5,3 +5,9 @@
 --
 
 vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true, silent = true })
+
+-- Copy di visual mode (Ctrl + y)
+vim.keymap.set("v", "<C-y>", '"+y', { noremap = true, silent = true })
+
+-- Paste di insert mode (Ctrl + p)
+vim.keymap.set("i", "<C-p>", "<C-r>+", { noremap = true, silent = true })

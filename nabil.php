@@ -9,8 +9,12 @@
 
 <body>
   <?php
-  $nama = "rendi";
+  $nama = "rendi\n";
   echo $nama;
+  for ($a = 1; $a < 10; $a++) {
+    echo "angka $a\n";
+  }
+
 
   ?>
 </body>
