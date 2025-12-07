@@ -15,8 +15,9 @@
     echo "angka $a\n";
   }
 
+  mysqli_connect("localhost", "root", "", "db_nabil");
+  mysqli_query("INSERT INTO siswa (nama, alamat) VALUES ('nabil', 'bekasi');"
 
-  ?>
 </body>
 
 </html>
