@@ -175,6 +175,19 @@ return {
         padding = { left = 1, right = 1 },
       }
 
+      require("lualine").setup({
+        sections = {
+          lualine_x = {
+            -- Add one or more components
+            require("triforce.lualine").level,
+            require("triforce.lualine").achievements,
+            "encoding",
+            "fileformat",
+            "filetype",
+          },
+        },
+      })
+
       -- CPU & RAM usage
       local cpu = { "CPU: 0%", color = { fg = colors.orange } }
       local ram = { "RAM: 0%", color = { fg = colors.orange } }
